@@ -17,5 +17,5 @@ func (u *User) CreateNew(fn, ln string) *User {
 
 func (u User) String() string {
 	names := []string{u.firstName, u.lastName}
-	return strings.Join(names, ",")
+	return strings.Join(names, "  ")
 }
