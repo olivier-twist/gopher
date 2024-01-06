@@ -9,10 +9,10 @@ type User struct {
 	lastName  string
 }
 
-func (u User) CreateNew(fn, ln string) *User {
+func (u *User) CreateNew(fn, ln string) *User {
 	u.firstName = fn
 	u.lastName = ln
-	return &u
+	return u
 }
 
 func (u User) String() string {
